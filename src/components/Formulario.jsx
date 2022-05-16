@@ -33,7 +33,7 @@ const Formulario = ({cliente, cargando}) => {
             let respuesta
             if (cliente.id) {
                 //Editando Registro
-                const url = `http://localhost:4000/clients/${cliente.id}`
+                const url = `${import.meta.env.VITE_API_URL}/${cliente.id}`
                 respuesta = await fetch(url,{
                     method: "PUT",
                     body: JSON.stringify(valores),

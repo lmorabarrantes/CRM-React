@@ -8,6 +8,7 @@ import VewClient from './pages/VewClient'
 
 
 function App() {
+  console.log()
 
   return (
     <BrowserRouter>
