@@ -1,10 +1,14 @@
 import React from 'react'
+import Formulario from '../components/Formulario'
 
 const NewClient = () => {
   return (
-    <div>
-      <h1>NUEVO CLIENTE</h1>
-    </div>
+    <>
+      <h1 className='font-black text-4xl text-blue-900 text-center'>Nuevo Cliente</h1>
+      <p className='mt-10'>Formulario para Resgistrar un Cliente</p>
+
+      <Formulario/>
+    </>
 
   )
 }
